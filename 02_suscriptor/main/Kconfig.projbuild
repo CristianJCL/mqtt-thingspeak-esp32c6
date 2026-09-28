@@ -1,0 +1,27 @@
+menu "ThingSpeak MQTT Configuration"
+
+config THINGSPEAK_CLIENT_ID
+    string "MQTT Client ID"
+    default ""
+    help
+        Client ID generado en ThingSpeak > Devices > MQTT.
+
+config THINGSPEAK_USERNAME
+    string "MQTT Username"
+    default ""
+    help
+        Username generado para el dispositivo MQTT de ThingSpeak.
+
+config THINGSPEAK_PASSWORD
+    string "MQTT Password"
+    default ""
+    help
+        Password generado para el dispositivo MQTT de ThingSpeak.
+
+config THINGSPEAK_CHANNEL_ID
+    string "ThingSpeak Channel ID"
+    default ""
+    help
+        ID numerico del canal de ThingSpeak que se publicara o suscribira.
+
+endmenu
